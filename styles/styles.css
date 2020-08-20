@@ -1,0 +1,211 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    background:#3498db;
+}
+
+.user{
+width: 120px;
+height: 120px;
+border-radius: 50%;
+position: absolute;
+top: -50px;
+left: 40%;
+}
+  
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+form{
+    border-radius: 5%;
+    width: 380px;
+	height: 520px;
+	background: #000;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+.alerta{
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    transition: .3s;
+    padding-bottom: 20px ;
+    position: absolute;
+    left: 45%;
+    top: 93%;
+}
+
+.alerta:hover{
+    color: #15f4ee;
+
+}
+.content h2{
+    margin: 15px 0;
+    color: #15f4ee;
+    text-transform: uppercase;
+    font-size: 2.9rem;
+    text-shadow: 0 0 40px #15f4ee;
+}
+
+.content .input-div{
+    position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.content .input-div.one{
+    margin-top: 0 ;
+}
+
+.i{
+    color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.i i{
+    transition:.3s;
+}
+
+.input-div div{
+    position: relative;
+    height: 45px;
+}
+
+.input-div div h5{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #15f4ee;
+    text-shadow: 0 0 40px #15f4ee;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.input-div:before , .input-div:after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #15f4ee;
+    box-shadow: 0 5px 5px 0 inset, 0 0 10px 0 #15f4ee;
+    transition: .4s;
+}
+
+.input-div:before{
+    right: 50%;
+}
+.input-div:after{
+    left: 50%;
+}
+.input-div.focus:before, .input-div.focus:after{
+    width: 50%;
+}
+
+.input-div.focus > div > h5 {
+    top: -5px;
+    font-size: 15px;
+}
+
+.input-div.focus > .i  >i{
+    color:#999;
+}
+
+.input-div div input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none ;
+    padding: 0.5rem 0.7rem;
+    font-size: 1.2rem;
+    color: #cdcfd6;
+    position: absolute;
+}
+
+.input-div.pass{
+    margin-bottom: 4px;
+}
+
+a{
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    transition: .3s;
+    padding-bottom: 20px ;
+}
+
+a:hover{
+    color: #15f4ee;
+}
+
+/* -------------BOTON.---------- */
+
+.boton-neon{
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    color: #15f4ee;
+    font-weight: 400;
+    border: 2px solid;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    cursor:pointer;
+    border-radius: 100px;
+    transition: 1.5s;
+    background:black;
+    outline: none;
+}
+
+.boton-neon:hover{
+    box-shadow: 0 5px 50px 0 inset, 0 5px 50px 0 #15f4ee;
+}
+section{
+	width: 100%;
+	height: 100vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB );
+	background-size: 400% 400%;
+	position: relative;
+	animation: change 10s ease-in-out infinite;
+}
+@keyframes change {
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
+

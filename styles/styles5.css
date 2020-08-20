@@ -1,0 +1,161 @@
+#sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background: #000000;
+  left: -200px;
+  transition: all 500ms linear;
+  z-index: 1;
+  box-shadow: 0 8px 8px 0 inset, 0 0 18px 0 #22C33B;
+}
+
+#sidebar.active {
+  left: 0px;
+}
+
+#sidebar ul li {
+  color: rgba(230, 230, 230, .9);
+  list-style: none;
+  padding: 15px 10px;
+  border-bottom: 4px solid rgba(100, 100, 100, .3);
+  text-align: center;
+}
+#sidebar .toggle-btn {
+  position: absolute;
+  left: 230px;
+  top: 20px;
+  cursor: pointer;
+}
+
+#sidebar .toggle-btn span {
+  display: block;
+  width: 40px;
+  text-align: center;
+  font-size: 30px;
+  border: 3px solid #000;
+}
+.fondo{
+  position: fixed;
+  font-size: 3em;
+  min-width:100%;
+  min-height: 100%;
+  top:50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+}
+a{
+  text-decoration: none;
+  color: transparent;
+}
+/*
+contenedor*/
+.contenedor{
+	background: black;
+	width:900px; 
+	height:700px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	border-radius: 9px;
+	box-shadow: 0 8px 8px 0 inset, 0 0 18px 0 #15f4ee;
+}
+/* formulario*/
+.form{
+	position: absolute;
+	left: 4%;
+	top: 2%;
+}
+.form h1{
+	color:transparent; 
+	text-shadow: 0 0 20px #22C386;
+	-webkit-text-stroke:1.0px #00AB76;
+	display: flex;
+	font-family: sans-serif;
+}
+.input{
+	box-shadow: 0 8px 8px 0 inset, 0 0 10px 0 #15f4ee;
+	width: 90%;
+	height: 38px;
+	color: #29B5AE;
+	border: none;
+    outline: none;
+    background: none ;
+    border-radius: 3px;
+}
+.form.focus:before, .form.focus:after{
+    width: 50%;
+}
+/*boton*/
+
+.boton{
+	position: absolute;
+	top: 115%;
+	left: 9%;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    color: #29B546;
+    font-weight: 400;
+    border: 2px solid;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    cursor:pointer;
+    border-radius: 100px;
+    transition: 1.5s;
+    background:black; 
+    outline: none;
+
+}
+
+
+.boton:hover{
+    box-shadow: 0 5px 50px 0 inset, 0 5px 50px 0 #43AD59;
+}
+section{
+	width: 100%;
+	height: 100vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB );
+	background-size: 400% 400%;
+	position: relative;
+	animation: change 10s ease-in-out infinite;
+}
+@keyframes change {
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
+.text{
+	color: white;
+	position: relative;
+	top: 5%;
+	left: 50%;
+	width: 45%;
+
+}
+.selector select{
+	position: relative;
+	box-shadow: 0 8px 8px 0 inset, 0 0 10px 0 #15f4ee;
+	width: 90%;
+	height: 38px;
+	color: #29B5AE;
+	border: none;
+    outline: none;
+    background: none ;
+    border-radius: 3px;
+}
+.anuncio{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%)translateY(-20%);
+	color: white;
+}
